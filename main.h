@@ -7,16 +7,17 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS */
-//here we will try define macros that will be used later in the code to handle formatting options in the printf-like function 
+/* FLAGS 
+here we will try define macros that will be used later in the code to handle formatting options in the printf-like function */
+
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-#define S_LONG 2///* LONG_SIZE MACRO */
-#define S_SHORT 1///* SHORT_SIZE MACRO */
+#define S_LONG 2 /* LONG_SIZE MACRO */
+#define S_SHORT 1 /* SHORT_SIZE MACRO */
 
 /**
  * struct fmt - Struct op
