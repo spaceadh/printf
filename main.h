@@ -16,8 +16,11 @@ here we will try define macros that will be used later in the code to handle for
 #define F_HASH 8
 #define F_SPACE 16
 
-#define S_LONG 2 /* LONG_SIZE MACRO */
-#define S_SHORT 1 /* SHORT_SIZE MACRO */
+/* LONG_SIZE MACRO */
+#define S_LONG 2 
+
+/* SHORT_SIZE MACRO */
+#define S_SHORT 1 
 
 /**
  * struct fmt - Struct op
@@ -27,8 +30,8 @@ here we will try define macros that will be used later in the code to handle for
  */
 struct fmt
 {
-	char fmt;   // The format specifier character (e.g., 'c', 's', 'd', etc.)
-    int (*fn)(va_list, char[], int, int, int, int); // The function pointer representing the associated printing function
+	char fmt;   /*The format specifier character (e.g., 'c', 's', 'd', etc.)*/
+    int (*fn)(va_list, char[], int, int, int, int); /* The function pointer representing the associated printing function*/
 };
 
 
