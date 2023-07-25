@@ -94,5 +94,8 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
+/* Function that prints the contents of the buffer if it exists */
+
+void print_buffer(char buffer[], int *buff_ind);
 
 #endif /* MAIN_H */
