@@ -8,7 +8,6 @@
  * width: get width.
  * precision: precision specifier
  * size: Size specifier
- *
  * Return: String
  */
 int handle_write_char(char c, char buffer[],
@@ -86,7 +85,6 @@ int write_number(int is_negative, int ind, char buffer[],
  * length: Number length
  * padd: Pading char
  * extra_c: Extra char
- *
  * Return: Number of printed chars.
  */
 int write_num(int ind, char buffer[], int flags, int width, int prec,
@@ -143,7 +141,6 @@ int write_num(int ind, char buffer[], int flags, int width, int prec,
  * width: Width specifier
  * precision: Precision specifier
  * size: Size specifier
- *
  * Return: Number of written chars.
  */
 int write_unsgnd(int is_negative, int ind, char buffer[],
