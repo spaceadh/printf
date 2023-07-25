@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_unsigned - Prints an unsigned number
+  * print_unsigned - Prints an unsigned number
  * @types: List a of arguments
  * @buffer: Buffer array to handle print
  * @flags:  Calculates active flags
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printed.
+ * Return: Unsigned number
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -42,7 +42,7 @@ int print_unsigned(va_list types, char buffer[],
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printed
+ * Return: Numbers
  */
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -83,12 +83,13 @@ int print_octal(va_list types, char buffer[],
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printed
+ * Return: Number
  */
 int print_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	return (print_hexa(types, "0123456789abcdef", buffer,flags, 'x', width, precision, size));
+	return (print_hexa(types, "0123456789abcdef", buffer,
+				flags, 'x', width, precision, size));
 }
 
 /**
@@ -99,11 +100,13 @@ int print_hexadecimal(va_list types, char buffer[],
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printed
+ * Return: Numbers
  */
-int print_hexa_upper(va_list types, char buffer[],int flags, int width, int precision, int size)
+int print_hexa_upper(va_list types, char buffer[],
+		int flags, int width, int precision, int size)
 {
-	return (print_hexa(types, "0123456789ABCDEF", buffer,flags, 'X', width, precision, size));
+	return (print_hexa(types, "0123456789ABCDEF", buffer,
+				flags, 'X', width, precision, size));
 }
 
 /**
@@ -118,7 +121,7 @@ int print_hexa_upper(va_list types, char buffer[],int flags, int width, int prec
  * @size: Size specifier
  * @size: Size specification
  *
- * Return: Number of chars printed
+ * Return: Numbers
  */
 int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
